@@ -1,5 +1,5 @@
-kubectl run capstone --image=dsirine/capstone --restart=Never --port=4000
+kubectl run capstone --image=dsirine/capstone:4 --restart=Never --port=4000
 
 kubectl get pods
 
-kubectl port-forward app 1200:4000
+kubectl port-forward capstone 1200:4000
